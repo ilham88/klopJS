@@ -556,7 +556,8 @@ function initAria2(): void {
   ariaTools.setOnDownloadError(ariaOnDownloadError);
 }
 
-function driveUploadCompleteCallback(err: string, gid: string, url: string, filePath: string, fileName: string, fileSize: number): void {
+function driveUploadCompleteCallback(err: string, gid: string, url: string, filePath: string,
+  fileName: string, fileSize: number, isFolder: boolean): void {
 
   var finalMessage;
   if (err) {
