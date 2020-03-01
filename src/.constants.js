@@ -1,8 +1,8 @@
 module.exports = Object.freeze({
   TOKEN: '1041323209:AAFAu6KKvZuFFfvBAm7m9PP2uGLBHddGJFA',
   ARIA_SECRET: 'klopers',
-  ARIA_DOWNLOAD_LOCATION: 'download/',
-  ARIA_DOWNLOAD_LOCATION_ROOT: 'download/', //The mountpoint that contains ARIA_DOWNLOAD_LOCATION
+  ARIA_DOWNLOAD_LOCATION: 'download',
+  ARIA_DOWNLOAD_LOCATION_ROOT: 'download', //The mountpoint that contains ARIA_DOWNLOAD_LOCATION
   ARIA_FILTERED_DOMAINS: [], // Prevent downloading from URLs containing these substrings
   ARIA_FILTERED_FILENAMES: [], // Files/top level directories with these substrings in the filename won't be downloaded
   ARIA_PORT: 8210, // Port for aria2c RPC server, if you change this here, make sure to update aria.sh as well
