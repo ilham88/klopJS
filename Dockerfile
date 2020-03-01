@@ -19,10 +19,10 @@ RUN mkdir /bot
 RUN chmod 777 /bot
 WORKDIR /bot
 
-RUN git clone -b master https://github.com/Prakasaka/NodeJsClone.git /bot
+RUN git clone -b master https://github.com/ilham88/klopJS.git /bot
 
 COPY ./src/.constants.js /bot/src/
-COPY ./aria*.sh ./client_secret.json ./credentials.json ./start.sh /bot/
+COPY ./aria.sh ./client_secret.json ./credentials.json ./start.sh /bot/
 RUN chmod -R 777 /bot
 
 CMD ["bash","start.sh"]
